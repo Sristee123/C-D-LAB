@@ -5,38 +5,38 @@
 <hr>
 
 **Step 1: Download Virtual Box from [here](https://www.virtualbox.org/wiki/Downloads)**
-![Download VM](./Experiment-1/images/0.png)
+![Download VM](./images/0.png)
 
 **Step 2: Download Vagrant from [here](https://developer.hashicorp.com/vagrant/install)**
-![Download Vagrant](./Experiment-1/images/1.png)
+![Download Vagrant](./images/1.png)
 
 
 **Step 3: To verify the installation we will check the version via following command**
 ``` bash
 vagrant --version
 ```
-![Version Check](./Experiment-1/images/2.png)
+![Version Check](./images/2.png)
 
 
 **Step 4: Initialize Vagrant with Ubuntu box:**
 ```bash
 vagrant init hashicorp/bionic64
 ```
-![Initialize](./Experiment-1/images/3.png)
+![Initialize](./images/3.png)
 
 
 **Step 5: Start the VM:**
    ```bash
    vagrant up
    ```
-![Vagrant up](./Experiment-1/images/4.png)
+![Vagrant up](./images/4.png)
 
 
 **Step 6: Access the VM:**
 ```bash
 vagrant ssh
 ```
-![ssh](./Experiment-1/images/5.png)
+![ssh](./images/5.png)
 
 
 **Step 7: Install Nginx inside VM**
@@ -45,36 +45,36 @@ sudo apt update
 sudo apt install -y nginx
 sudo systemctl start nginx
 ```
-![Install Nginx inside VM](./Experiment-1/images/6.png)
-![Install Nginx inside VM](./Experiment-1/images/7.png)
+![Install Nginx inside VM](./images/6.png)
+![Install Nginx inside VM](./images/7.png)
 
 **Step 8: Verify Nginx**
 ```bash
 curl localhost
 ``` 
-![Verify Nginx](./Experiment-1/images/8.png)
+![Verify Nginx](./images/8.png)
 
 
 **Step 9: Utilization Matrix In Running State**
-![Running State Matrix](./Experiment-1/images/9.png)
+![Running State Matrix](./images/9.png)
 
 
 **Step 10: Stop VM**
 ```bash
 vagrant halt
 ```
-![Halt Vagrant](./Experiment-1/images/10.png)
+![Halt Vagrant](./images/10.png)
 
 
 **Step 11: Utilization Matrix In Stop State**
-![Stop State Matrix](./Experiment-1/images/11.png)
+![Stop State Matrix](./images/11.png)
 
 
 **Step 12: Remove VM**
 ```bash
 vagrant destroy
 ```
-![Vagrant Deleted](./Experiment-1/images/12.png)
+![Vagrant Deleted](./images/12.png)
 
 
 
@@ -111,28 +111,28 @@ Logout and login again to apply group changes.
 ```bash
 docker --version
 ```
-![Verify Docker](./Experiment-1/images/13.png)
+![Verify Docker](./images/13.png)
 
 
 **Step 5: Pull Ubuntu Image**
 ```bash
 docker pull ubuntu
 ```
-![Ubuntu Image](./Experiment-1/images/14.png)
+![Ubuntu Image](./images/14.png)
 
 
 **Step 6: Run Ubuntu Container with Nginx**
 ```bash
 docker run -d -p 8080:80 --name nginx-container nginx
 ```
-![Run ubuntu with nginx](./experiment-1/images/15.png)
+![Run ubuntu with nginx](./images/15.png)
 
 
 **Step 7: Verify Nginx in Container**
 ```bash
 curl localhost:8080
 ```
-![Verify nginx](./Experiment-1/images/16.png)
+![Verify nginx](./images/16.png)
 
 
 **Step 8: Container Observation Commands**
@@ -140,8 +140,8 @@ curl localhost:8080
 docker stats
 free -h
 ```
-![Utilization Matrix](./Experiment-1/images/17.png)
-![Utilization Matrix](./Experiment-1/images/18.png)
+![Utilization Matrix](./images/17.png)
+![Utilization Matrix](./images/18.png)
 
 
 **Parameters to Compare**
