@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <h2 align="center"> Experiment-1 : VM vs Container </h2>
 
 
@@ -310,4 +310,4 @@ free -h
 | CPU Overhead | Higher          | Minimal   |
 | Disk Usage   | Larger          | Smaller   |
 | Isolation    | Strong          | Moderate  |
->>>>>>> 36140c9 (Updated main README and added Experiment-2 folder)
+
